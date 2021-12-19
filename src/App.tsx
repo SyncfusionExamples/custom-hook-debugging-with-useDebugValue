@@ -1,8 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { useFetch } from './use-fetch';
 
 function App() {
+  const fetchedResponse = useFetch('https://www.hpb.health.gov.lk/api/get-current-statistical');
   return (
     <div className="App">
       <header className="App-header">
